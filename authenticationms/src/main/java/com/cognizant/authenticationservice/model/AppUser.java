@@ -23,6 +23,7 @@ import lombok.Setter;
 @Table(name = "appuser")
 public class AppUser {
 	
+	
 	@Id
 	@Column(name = "userid", length = 20)
 	@NotNull
