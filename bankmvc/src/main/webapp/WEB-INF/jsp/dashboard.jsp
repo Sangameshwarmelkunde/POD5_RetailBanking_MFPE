@@ -124,20 +124,20 @@ input[type=number] {
   <div class="col-xs-12 col-sm-6 col-md-4">
 			<div style="margin: 5em 10em 2em 3em;">
 				<div class="card bg-dark text-white" style="width:350px">
-					<img alt="" src="images/delete.jfif"  style="height:200px">
+					<img alt="" src="images/getAllCustomers.png" style="height:200px">
 					<div class="card-body">
-						<h4 class="card-title">Delete Customer</h4>
-						<form action="/deleteCustomer" method="post">
-							Customer ID:<input type="text" name="customerId" id="customerId" placeholder="Enter the customerId" autocomplete="off"/>
-							<br> <br> <input type="submit" name="Delete" value="Delete" class="btn btn-primary" />
+						<h4 class="card-title">View the Customer</h4>
+						<form action="/viewCustomer" method="get">
+							User ID:<input type="text" name="userId" id="userId" placeholder="Enter the UserId" autocomplete="off"/>
+							<br> <br> <input type="submit" name="View" value="View"
+								class="btn btn-primary" />
 						</form>
-						<p id="message">${deletemsg}</p>
+						<p id="message">${viewmsg}</p>
 					</div>
-					
+
 				</div>
 			</div>
 		</div>
-	</div>
 
 	<div class="container-ls row">
 
