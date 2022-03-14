@@ -111,7 +111,8 @@ input[type=number] {
 						<tr>
 							<th>Enter Date Of Birth</th>
 							<td></td>
-							<td><form:input type="date" id="date" path="dateOfBirth"
+							<!-- <td><form:input id="datefield" path="dateOfBirth" type="date"  max="2000-13-13"/></td> -->  
+							<td><form:input type="date" id="datefield" path="dateOfBirth"
 									name="dob" placeholder="Date of Birth" required="required"/></td>
 						</tr>
 						<tr>
@@ -147,4 +148,20 @@ input[type=number] {
 
 </div>
 </body>
+<script>
+document.getElementById("demo").innerHTML = "My First JavaScript";
+var today = new Date();
+var dd = today.getDate();
+var mm = today.getMonth()+1; //January is 0!
+var yyyy = today.getFullYear();
+ if(dd<10){
+        dd='0'+dd
+    } 
+    if(mm<10){
+        mm='0'+mm
+    } 
+
+today = yyyy+'-'+mm+'-'+dd;
+document.getElementById("datefield").setAttribute("max", today);
+</script>
 </html>
