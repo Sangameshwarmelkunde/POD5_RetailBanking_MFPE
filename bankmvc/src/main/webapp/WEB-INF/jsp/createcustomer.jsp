@@ -154,6 +154,7 @@ var today = new Date();
 var dd = today.getDate();
 var mm = today.getMonth()+1; //January is 0!
 var yyyy = today.getFullYear();
+var posy = today.getFullYear()-18;
  if(dd<10){
         dd='0'+dd
     } 
@@ -162,6 +163,7 @@ var yyyy = today.getFullYear();
     } 
 
 today = yyyy+'-'+mm+'-'+dd;
-document.getElementById("datefield").setAttribute("max", today);
+conf = posy+'-'+mm+'-'+dd;
+document.getElementById("datefield").setAttribute("max", conf);
 </script>
 </html>
